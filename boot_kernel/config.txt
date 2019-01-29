@@ -1,0 +1,28 @@
+arm_64bit
+kernel_address=0x80000
+
+# ramfsfile=init.gz
+# ramfsaddr=0x00a00000
+[pi3]
+initramfs ramdisk.img followkernel
+
+init_uart_baud=115200
+init_uart_clock=48000000
+
+bootcode_delay=3
+boot_delay=3
+boot_delay_ms=0
+
+dtdebug=1
+enable_uart=1
+
+force_turbo=1
+arm_freq=1200
+core_freq=250
+sdram_freq=450
+over_voltage=8
+over_voltage_sdram_c=8
+over_voltage_sdram_i=8
+over_voltage_sdram_p=8
+
+device_tree=bcm2837-rpi-3-b.dtb
